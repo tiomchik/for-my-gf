@@ -1,0 +1,195 @@
+@font-face {
+  font-family: Merriweather;
+  src: url("../fonts/Merriweather-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Merriweather;
+  src: url("../fonts/Merriweather-Black.ttf");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Merriweather;
+  src: url("../fonts/Merriweather-BlackItalic.ttf");
+  font-weight: 900;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #432818;
+  font-family: Merriweather, serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1550px;
+  display: flow-root;
+  overflow-x: hidden;
+}
+
+.img-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.visible {
+  opacity: 1 !important;
+}
+
+.second-section,
+.third-section,
+.fourth-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/*    Typography    */
+h1 {
+  color: #ffedc4;
+  font-size: calc(1.725rem + 5.7vw);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+.red {
+  color: #f4557d;
+}
+
+h1 > i.red {
+  text-align: center;
+}
+
+p {
+  color: #e6d2a5;
+  font-size: calc(1.3125rem + 0.75vw);
+  text-indent: 100px;
+  margin-left: 50px;
+  margin-top: 55px;
+}
+
+@media (min-width: 1200px) {
+  p {
+    font-size: 1.875rem;
+  }
+}
+
+@media (max-width: 700px) {
+  p {
+    font-size: 18px;
+    text-indent: 0;
+    margin-right: 20px;
+    margin-left: 40px;
+    margin-top: 15px;
+  }
+}
+
+/*  1st section  */
+.first-section {
+  height: 100vh;
+}
+
+@keyframes dashenka {
+  0% {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#dashenka {
+  animation-name: dashenka;
+  animation-duration: 1.3s;
+  animation-timing-function: ease;
+}
+
+@keyframes happyBirthdayText {
+  0% {
+    transform: translateX(40px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#happy-birthday-text {
+  animation-name: happyBirthdayText;
+  animation-duration: 1.2s;
+  animation-timing-function: ease;
+  margin-top: 5px;
+}
+
+#happy-birthday-text,
+#manuls {
+  opacity: 0;
+  animation-delay: 1.5s;
+  animation-timing-function: ease;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+#manuls {
+  margin-top: 40px;
+  max-width: 650px;
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+}
+
+/*  2nd section  */
+.second-section img {
+  float: right;
+  width: 34vw;
+  margin-top: 30px;
+  margin-right: 10px;
+  height: 41vw;
+}
+
+/*  3rd section  */
+.third-section img {
+  width: 52vw;
+  height: 34vw;
+  margin-top: 40px;
+  margin-left: 10px;
+}
+
+/*  4th section  */
+.the-end-img {
+  margin-top: 10px;
+  width: 50vw;
+}
